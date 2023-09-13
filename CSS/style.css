@@ -928,11 +928,11 @@ span {
     #menu-icon {
         display: block;
         position: absolute;
-        right: 50px;
+        right: 100px;
     }
     #dark_mode_icon {
         position: absolute;
-        right: 80px;
+        right: 150px;
         font-size: 26px;
         color: var(--text-color);
         margin-bottom: 1px;
