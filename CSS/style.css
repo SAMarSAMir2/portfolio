@@ -701,7 +701,10 @@ span {
 @media (max-width: 991px) {
     .navbar a:nth-child(1),
     .navbar a:nth-child(2),
-    .navbar a:nth-child(3) {
+    .navbar a:nth-child(3),
+    .navbar a:nth-child(4),
+    .navbar a:nth-child(5),
+    .navbar a:nth-child(6) {
         color: var(--main-color);
     }
 
@@ -837,6 +840,10 @@ span {
         transform: rotate(90deg) translate(-115px , -450px);
     }
 
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-220px , -335px);
+    }
+
     .home .profession-box .circle {
         position: fixed;
         width: 670px;
@@ -846,10 +853,10 @@ span {
 
     .home .profession-cotainer .overlay {
         position: fixed;
-        top: 570px;
+        top: 700px;
         left: 50%;
         right: 0;
-        transform: rotate(90deg) translate(-50%,50%) scaleY(3);
+        transform: rotate(90deg) translate(-50%,50%) scaleY(4);
         border-width:239px;
     }
 
@@ -860,6 +867,33 @@ span {
 }
 
 @media (max-width: 617px) {
+    #menu-icon {
+        display: block;
+        position: absolute;
+        right: 400px;
+    }
+    #dark_mode_icon {
+        position: absolute;
+        right: 150px;
+        font-size: 26px;
+        color: var(--text-color);
+        margin-bottom: 1px;
+    }
+    .home .profession-box .circle {
+        position: fixed;
+        width: 600px;
+        height: 600px;
+        z-index: -1;
+    }
+
+    .home .profession-cotainer .overlay {
+        position: fixed;
+        top: 500px;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%,50%) scaleY(4);
+        border-width:239px;
+    }
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -890,10 +924,38 @@ span {
     }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 400px) {
+    #menu-icon {
+        display: block;
+        position: absolute;
+        right: 80px;
+    }
+    #dark_mode_icon {
+        position: absolute;
+        right: 120px;
+        font-size: 26px;
+        color: var(--text-color);
+        margin-bottom: 1px;
+    }
+
     .btn {
         padding: 10px 20px;
         font-size: 18px;
+    }
+    .home .profession-box .circle {
+        position: fixed;
+        width: 670px;
+        height: 670px;
+        z-index: -1;
+    }
+
+    .home .profession-cotainer .overlay {
+        position: fixed;
+        top: 600px;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%,50%) scaleY(4);
+        border-width:239px;
     }
     .about {
         flex-direction: column-reverse;
